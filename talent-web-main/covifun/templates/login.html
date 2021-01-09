@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="en">
+<head>
+<!-- Required meta tags -->
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<!-- Bootstrap CSS -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+<style>
+*{
+margin:0;
+padding:0;
+}
+@import "https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css";
+body{
+background-image:url('img/nipyata-pkxtWduLfO0-unsplash.jpg') ;
+background-position:center ;
+background-size: cover;
+font-family: cursive;
+}
+</style>
+<title>CoviFun</title>
+</head>
+<body>
+<!-- Modal -->
+<form action="login" method="POST">
+    {% csrf_token %}
+<div class="form-group row">
+<label for="staticEmail" class=" col-form-label">Email Address</label>
+<div class="col-sm-10">
+<input type="text" class="form-control-plaintext" id="staticEmail" aria-describedby="emailHelp" value="name@example.com" name="email">
+<small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+</div>
+</div>
+<div class=" row">
+<label for="inputPassword" class="col-form-label">Password</label>
+<div class="col-sm-10">
+<input type="password" class="form-control" id="inputPassword" name="password">
+</div>
+</div>
+<input type="checkbox" checked="checked"> Remember me
+<div class="container">
+</div>
+    <div class="modal-footer">
+<button type="submit" class="btn btn-outline-success" data-bs-dismiss="modal">Submit</button>
+</div>
+</form>
+
+</body>
+</html>
